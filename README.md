@@ -30,10 +30,10 @@ It will look like the following shell command:
 
 ## Installing, Compiling and Executing the bonus
 
-the program features a bonus section that will allow an unlimited number of pipes,
+The program features a bonus section that will allow an unlimited number of pipes,
 as well as heredoc management.
 
-You can go to the directory for compilation and can do ```make bonus```.
+In the same directory you can do ```make bonus```.
 
 Now you can use an unlimited number of commands separated by pipes:
 ```shell
