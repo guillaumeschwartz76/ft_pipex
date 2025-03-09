@@ -72,7 +72,7 @@ void	ft_un(char **argv, char **env, t_listp **listp, t_pointer *pointer)
 		patch = ft_testpath(ft_path(env), argv[2]);
 		ft_exe(patch, t, argv[2], env);
 		ft_clean_all(patch, pointer);
-		write (2, "command not found 1", 19);
+		write (2, "command not found 1\n", 19);
 		exit(EXIT_FAILURE);
 	}
 	else
@@ -96,7 +96,7 @@ void	ft_mid(char *argv, char **env, t_listp **listp, t_pointer *pointer)
 		patch = ft_testpath(ft_path(env), argv);
 		ft_exe(patch, t, argv, env);
 		ft_clean_all(patch, pointer);
-		write (2, " command not found ", 19);
+		write (2, " command not found \n", 19);
 		exit(EXIT_FAILURE);
 	}
 	else

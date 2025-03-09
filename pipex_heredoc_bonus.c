@@ -56,7 +56,7 @@ void	ft_childunhere(int pipe_fd[], char **argv, char **env)
 	patch = ft_testpath(ft_path(env), argv[3]);
 	ft_exe(patch, t, argv[3], env);
 	free(patch);
-	write (2, "pb child1", 9);
+	write (2, "pb child1\n", 9);
 	unlink("text.tmp");
 	exit(EXIT_FAILURE);
 }
@@ -80,7 +80,7 @@ void	ft_childdeuxhere(int pipe_fd[], char **argv, char **env)
 	patch = ft_testpath(ft_path(env), argv[4]);
 	ft_exe(patch, t, argv[4], env);
 	free(patch);
-	write(2, "pb child2", 9);
+	write(2, "pb child2\n", 9);
 	exit(EXIT_FAILURE);
 }
 

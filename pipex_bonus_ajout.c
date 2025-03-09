@@ -25,5 +25,5 @@ int	ft_error_deux(int n, const char *str)
 void	ft_free_last(char **patch)
 {
 	free(patch);
-	write (2, " command not found last", 23);
+	write (2, " command not found last\n", 24);
 }

@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -Wno-unused
 RM = rm -rf
 NAME = pipex
 NAME_BONUS = pipex_bonus

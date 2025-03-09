@@ -108,6 +108,6 @@ int	main(int argc, char **argv, char **env)
 			exit(status);
 		exit(EXIT_SUCCESS);
 	}
-	write (2, "arguments faux", 9);
+	write (2, "arguments faux\n", 15);
 	exit(EXIT_FAILURE);
 }

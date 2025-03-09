@@ -17,6 +17,7 @@ void	ft_error(int n, const char *str)
 	if (n == -1)
 	{
 		perror(str);
+		write(1, "\n", 1);
 		exit(EXIT_FAILURE);
 	}
 }

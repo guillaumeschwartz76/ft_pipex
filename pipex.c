@@ -81,7 +81,7 @@ pid_t	ft_childun(int pipe_fd[], char **argv, char **env)
 		patch = ft_testpath(ft_path(env), argv[2]);
 		ft_exe(patch, t, argv[2], env);
 		free(patch);
-		write (2, "command not found 1", 19);
+		write (2, "command not found 1\n", 20);
 		exit(EXIT_FAILURE);
 	}
 	else
@@ -107,7 +107,7 @@ void	ft_childdeux(int pipe_fd[], char **argv, char **env)
 	patch = ft_testpath(ft_path(env), argv[3]);
 	ft_exe(patch, t, argv[3], env);
 	free(patch);
-	write(2, " command not found last", 23);
+	write(2, " command not found last\n", 24);
 	exit(EXIT_FAILURE);
 }
 
@@ -133,6 +133,6 @@ int	main(int argc, char **argv, char **env)
 			exit(status >> 8);
 		exit(EXIT_SUCCESS);
 	}
-	write (2, "arguments faux", 14);
+	write (2, "arguments faux\n", 15);
 	exit(EXIT_FAILURE);
 }
